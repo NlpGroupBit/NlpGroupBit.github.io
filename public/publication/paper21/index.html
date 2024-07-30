@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic-group">
+
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://NlpGroupBit.github.io//js/hugo-academic-group.js"></script>
+
+    <link rel="stylesheet" href="https://NlpGroupBit.github.io//css/bootstrap.min.css">
+    <script src="https://NlpGroupBit.github.io//js/bootstrap.min.js"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    
+    
+    <script src="https://NlpGroupBit.github.io//js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+    <link rel="stylesheet" href="https://NlpGroupBit.github.io//css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://NlpGroupBit.github.io//css/academicons.min.css">
+    <link rel="stylesheet" href="https://NlpGroupBit.github.io//css/biaslab-font.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:100,400,700|Roboto+Mono">
+    <link rel="stylesheet" href="https://NlpGroupBit.github.io//css/hugo-academic-group.css">
+
+    
+
+
+    <link rel="shortcut icon" href="https://NlpGroupBit.github.io//img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://NlpGroupBit.github.io/publication/paper21/">
+
+    <title>Pattern-based Topics for Document Modelling in Information Filtering | Academic group name</title>
+
+</head>
+
+<body>
+<div class="home-anchor" id="home"></div>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-brand">
+                
+                
+            </div>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://NlpGroupBit.github.io/#top">Home</a></li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://NlpGroupBit.github.io/#posts">News</a></li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://NlpGroupBit.github.io/#publications">Publications</a></li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://NlpGroupBit.github.io/#members">Members</a></li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://NlpGroupBit.github.io/#contact">Contact</a></li>
+                    
+                
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container">
+
+    <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="pub-title">
+                    <h1 itemprop="name">Pattern-based Topics for Document Modelling in Information Filtering</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="pub-authors" itemprop="author">
+                    
+<div itemprop="author">
+        
+            
+                
+<span class="author-name"><a href="https://NlpGroupBit.github.io/member/leader1/">Yang Gao</a></span>,
+            
+                
+<span class="author-name">Yue Xu</span>,
+            
+            
+                 
+<span class="author-name">Yuefeng Li</span>
+            
+        
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Abstract</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="pub-abstract" itemprop="text">Many mature term-based or pattern-based approaches have been used in the field of information filtering to generate users&rsquo; information needs from a collection of documents. A fundamental assumption for these approaches is that the documents in the collection are all about one topic. However, in reality users&rsquo; interests can be diverse and the documents in the collection often involve multiple topics. Topic modelling, such as Latent Dirichlet Allocation (LDA), was proposed to generate statistical models to represent multiple topics in a collection of documents, and this has been widely utilized in the fields of machine learning and information retrieval, etc. But its effectiveness in information filtering has not been so well explored. Patterns are always thought to be more discriminative than single terms for describing documents. However, the enormous amount of discovered patterns hinder them from being effectively and efficiently used in real applications, therefore, selection of the most discriminative and representative patterns from the huge amount of discovered patterns becomes crucial. To deal with the above mentioned limitations and problems, in this paper, a novel information filtering model, Maximum matched Pattern-based Topic Model (MPBTM), is proposed. The main distinctive features of the proposed model include: (1) user information needs are generated in terms of multiple topics; (2) each topic is represented by patterns; (3) patterns are generated from topic models and are organized in terms of their statistical and taxonomic features; and (4) the most discriminative and representative patterns, called Maximum Matched Patterns, are proposed to estimate the document relevance to the user&rsquo;s information needs in order to filter out irrelevant documents. Extensive experiments are conducted to evaluate the effectiveness of the proposed model by using the TREC data collection Reuters Corpus Volume 1. The results show that the proposed model significantly outperforms both state-of-the-art term-based models and pattern-based models.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+                    <div class="col-xs-12 col-sm-9">IEEE Transactions on Knowledge and Data Engineering</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="visible-xs space-below"></div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+                    <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+                        
+                            December, 2014
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="visible-xs space-below"></div>
+
+        <div class="row" style="padding-top: 10px">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+                    <div class="col-xs-12 col-sm-9">
+
+                        
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://ieeexplore.ieee.org/document/6994276">PDF</a>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="visible-xs space-below"></div>
+
+        <div class="space-below"></div>
+
+        <div class="article-style"></div>
+
+    </div>
+
+
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            © Nlp Group Bit, 2024 &middot; 
+
+            Partially powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#home" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+</body>
+</html>
+

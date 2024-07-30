@@ -1,0 +1,107 @@
+publishdir = "public"
+static = "/static"
+builddrafts = false
+# Replace this with your website URL
+baseurl = "https://NlpGroupBit.github.io/"
+canonifyurls = true
+theme = "hugo-academic-group"
+title = "Academic group name"
+math = true
+copyright = "&copy; Nlp Group Bit, 2024"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+
+[params]
+  description = "Website of research group"
+  author = "Your name"
+  email = "gyang@bit.edu.cn"
+  address = "Zhongguancun South Street, Haidian District, 100081, Beijing, China"
+  phone = "010-12345678"
+
+  slogan = "NLP ACADEMIC GROUP"
+  slogan_text = "Modern Artificial Intelligence research"
+
+  [[params.slogan_columns]]
+    title = "About"
+    text =  "We are dedicated to exploring computational models for semantic representation, extraction, and generation based on text, as well as images, videos, and large-scale knowledge across multiple modalities. Through large model training, self-evolution theories, and data-driven text generation technologies, we aim to enhance the ability to process and understand multimodal data. Our research group's goal is to develop and apply advanced natural language processing technologies, promoting applications in text summarization, cross-lingual/cross-modal translation, style transfer, and intelligent question-answering systems. We strive to address semantic understanding and generation challenges across different contexts and modalities, aiming for breakthroughs in information extraction, content generation, and human-computer interaction. Through our research, we hope to achieve more intelligent and natural human-computer interactions and provide innovative solutions for comprehensive multimodal data processing. The research group actively collaborates with leading academic institutions and industries both domestically and internationally, promoting technological applications while focusing on training high-quality research talent, collectively advancing the field of natural language processing."
+    link = "/about"
+    link_text = ""
+    weight = 1
+
+  # Selected Publications section.
+  [params.publications_selected]
+    detailed_list = true
+    title = "Selected Publications"
+    subtitle = ""
+
+  # Publications section.
+  # Section will only be displayed if there are publications in `content/publication/`.
+  [params.publications]
+    count = 2
+    title = "Publications"
+    subtitle = ""
+    str_all = "More Publications"
+    str_read_more = "Read more"
+
+  # Posts section.
+  # Section will only be displayed if there are posts in `content/post/`.
+  [params.posts]
+    count = 2
+    title = "News"
+    subtitle = ""
+    str_all = "More News"
+    str_read_more = "Read more"
+
+  # Projects section.
+  # Section will only be displayed if there are projects in `content/project/`.
+  [params.projects]
+    title = "Projects"
+    subtitle = ""
+    count = 3
+    str_all = "More Projects"
+  
+  # Vacancies section
+  # Section will only be displayed if there are valid vacancies in `content/vacancy`
+  [params.vacancies]
+    title = "Vacancies"
+    subtitle = ""
+    count = 3
+    str_all = "More Vacancies"
+
+  # Contact section.
+  [params.contact]
+    enable = true
+    title = "Contact"
+    subtitle = ""
+    autolink = false  # Automatically link email and phone?
+
+  # Navigation Links
+  #   The weight parameter defines the order that the links will appear in.
+
+  [[menu.main]]
+      name = "Home"
+      url = "/#top"
+      weight = 1
+  
+    [[menu.main]]
+      name = "News"
+      url = "/#posts"
+      weight = 2
+
+  [[menu.main]]
+      name = "Publications"
+      url = "/#publications"
+      weight = 3
+
+  [[menu.main]]
+      name = "Members"
+      url = "/#members"
+      weight = 4
+
+  [[menu.main]]
+      name = "Contact"
+      url = "/#contact"
+      weight = 5
