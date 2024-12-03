@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic-group">
+
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="..\..//js/hugo-academic-group.js"></script>
+
+    <link rel="stylesheet" href="..\..//css/bootstrap.min.css">
+    <script src="..\..//js/bootstrap.min.js"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    
+    
+    <script src="..\..//js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+    <link rel="stylesheet" href="..\..//css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\..//css/academicons.min.css">
+    
+    
+    <link rel="stylesheet" href="..\..//css/hugo-academic-group.css">
+
+    
+
+
+    <link rel="shortcut icon" href="..\..//img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="..\../project/project1---%E5%89%AF%E6%9C%AC/">
+
+    <title>PSPO: An Effective Process-supervised Policy Optimization for Reasoning Alignment | DIRECT</title>
+
+</head>
+
+<body>
+<div class="home-anchor" id="home"></div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-brand">
+                
+                
+            </div>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../index.html">Home</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../post/index.html">News</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../project/index.html">Project</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../publication/index.html">Research</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../member/index.html">Members</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../index.html#contact">Contact</a></li>
+                    
+                    
+                
+                <li class="nav-item"><a data-scroll href="https://github.com/DirectionAI">GitHub</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    
+
+    <article class="article article-project" itemscope itemtype="http://schema.org/Article">
+        <h1 itemprop="name">PSPO: An Effective Process-supervised Policy Optimization for Reasoning Alignment</h1>
+        
+        
+
+        <a class="btn btn-primary btn-outline" href="https://github.com/DirectionAI/PSPO/tree/main">Go to Project Site</a>
+
+        <div class="article-style" itemprop="articleBody">
+            <h3 id="pspo-an-effective-process-supervised-policy-optimization-for-reasoning-alignment">PSPO*: An Effective Process-supervised Policy Optimization for Reasoning Alignment</h3>
+<h2 id="-introduction">📝 Introduction</h2>
+<p><strong>PSPO*: An Effective Process-supervised Policy Optimization for Reasoning Alignment</strong> is a novel process supervision paradigm, which systematically outlines the workflow from reward model training to policy optimization, and highlights the importance of nonlinear rewards in process supervision. Based on PSPO*, we develop the <strong>PSPO-WRS</strong>, which considers the <strong>number of reasoning steps</strong> in determining reward scores and utilizes an adjusted Weibull distribution for <strong>nonlinear reward shaping</strong>. Experimental results on six mathematical reasoning datasets demonstrate that PSPO-WRS consistently outperforms current mainstream models.</p>
+<h2 id="motivation">💡Motivation</h2>
+<!-- raw HTML omitted -->
+<img src="../../img/project/5-2.jpg"
+alt="overall">
+<ul>
+<li><strong>Background</strong>
+<ul>
+<li>Quantifying an accurate reasoning process is crucial for effectively addressing the complex reasoning task. Using process supervision to achieve reasoning alignment is considered an effective way to quantifying reasoning process.</li>
+<li>In process supervision, each step receives precise supervision. It provides feedback for each individual step in a chain-of-thought and rewards the model for aligning with the human-approved reasoning process</li>
+</ul>
+</li>
+<li><strong>Problem of existed Process supervision methods</strong>
+<ul>
+<li>The implementation of process supervision involves training process-supervised reward models (PRMs) and computing a single PRM score by aggregating scores from multiple reasoning chains. However, most current methods overlook the impact of the length of the reasoning chain on the PRM score.</li>
+<li>As illustrated in the above figure, inaccurate reasoning chains those that are excessively long or short can lead to wrong outcomes.Consequently, we aim to develop more effective process supervision methods to address this issue.</li>
+</ul>
+</li>
+</ul>
+<h2 id="methodology">🔍<strong>Methodology</strong></h2>
+<img src="../../img/project/5-3.jpg"
+                        alt="methodology">
+<!-- raw HTML omitted -->
+<p>Similar to the standard RLHF paradigm, process supervision based on human feedback consists of two main stages. The first stage is learning the reward model. The second stage is optimizing the policy based on the learned reward model. We provide a detailed introduction to these two stages, given the characteristics of process supervision. Additionally, we propose PSPO*, a novel paradigm for process supervision to achieve reasoning alignment. PSPO* encompasses the entire workflow for process supervision from reward model training to policy optimization. This paradigm includes a nonlinear accumulation function that is linked to the accuracy of reasoning chains. It also features nonlinear reward shaping that adjusts rewards based on the length of the reasoning chains.</p>
+<p>Building upon PSPO*, we propose the PSPO-WRS method, which utilizes a nonlinear reward accumulation function correlated with the accuracy and quantity of reasoning steps, and employs adjusted Weibull distribution for nonlinear reward shaping. Experimental results demonstrate the effectiveness of PSPO-WRS and further validate the correctness of the PSPO* framework.</p>
+<h2 id="human-data-collection">📋<strong>Human Data Collection</strong></h2>
+<img src="../../img/project/5-4.jpg"
+                        alt="">
+<!-- raw HTML omitted -->
+<ul>
+<li><strong>Step Labelling Criteria</strong>
+Each reasoning step is evaluated and assigned a label based on its correctness: ‘positive’(score of ‘1’), ‘neutral’ (score of ‘0’), and ‘negative’ (score of ‘-1’). A step receives a positive score if it accurately meets logical and computational requirements, correctly interprets the task, and contributes to deriving the correct answer. A neutral score is awarded if the step is correct but does not aid in reaching the correct conclusion. Conversely, steps that contain logical ,computational, or factual inaccuracies, or are irrelevant to the given context and question, are assigned a negative score of -1</li>
+</ul>
+<h2 id="experimental-setups">🔬<strong>Experimental Setups</strong></h2>
+<h3 id="datasets"><strong>Datasets</strong></h3>
+<p>We adopt the MATH dataset, which includes AwpNLI, NewsNLI, RedditNLI, RTE-Quant, StressTest, and QQA datasets as reported by <!-- raw HTML omitted -->Chen et al. (2023)<!-- raw HTML omitted --> . These datasets are further expanded using the GPT-3.5 API.</p>
+<h3 id="metrics-and-parameters-setting"><strong>Metrics and Parameters setting</strong></h3>
+<p>The evaluation metric utilized is the average micro-F1 score on the test dataset because it balances precision and recall, providing a more comprehensive measure of model performance. We employ <!-- raw HTML omitted -->Abel-7B<!-- raw HTML omitted --> as the baseline model. The reward model is trained on the <!-- raw HTML omitted -->BERT-large<!-- raw HTML omitted -->. The reward model is trained over 10 epochs with a learning rate of 2e-5, a warmup rate of 0.05, and a maximum sequence length of 256. PPO training uses Lora with a learning rate of 1.41e-5 and a maximum of 512 tokens. On a dataset of 5470 entries, each epoch averages 55 hours on four NVIDIA A100 GPUs.</p>
+<h2 id="overall-results">📈<strong>Overall Results</strong></h2>
+<img src="../../img/project/5-5.jpg"
+                        alt="">
+<table>
+<thead>
+<tr>
+<th>Models</th>
+<th>AwpNLI</th>
+<th>NewsNLI</th>
+<th>RedditNLI</th>
+<th>RTE-Quant</th>
+<th>StressTest</th>
+<th>QQA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Llama2-7B (Touvron et al. 2023)</td>
+<td>1.47%</td>
+<td>0.47%</td>
+<td>0.40%</td>
+<td>0.86%</td>
+<td>1.36%</td>
+<td>3.70%</td>
+</tr>
+<tr>
+<td>BLOOMZ (Muennighoff et al. 2023)</td>
+<td>48.04%</td>
+<td>54.46%</td>
+<td>37.20%</td>
+<td>47.64%</td>
+<td>31.22%</td>
+<td>51.85%</td>
+</tr>
+<tr>
+<td>Abel-7B (Chern et al. 2023)</td>
+<td>55.82%</td>
+<td>50.75%</td>
+<td>47.20%</td>
+<td>56.67%</td>
+<td>30.87%</td>
+<td>48.14%</td>
+</tr>
+<tr>
+<td>Llama3.1-8B (Dubey et al. 2024)</td>
+<td>66.18%</td>
+<td>62.91%</td>
+<td>39.60%</td>
+<td>48.93%</td>
+<td>13.04%</td>
+<td>50.62%</td>
+</tr>
+<tr>
+<td>Qwen1.5-7B-chat (Yang et al. 2024)</td>
+<td>54.90%</td>
+<td>54.93%</td>
+<td>40.00%</td>
+<td>21.13%</td>
+<td>27.32%</td>
+<td>46.30%</td>
+</tr>
+<tr>
+<td>CN-PPO (Liang et al. 2024)</td>
+<td>82.35%</td>
+<td>61.97%</td>
+<td>63.20%</td>
+<td>63.52%</td>
+<td>46.30%</td>
+<td>48.77%</td>
+</tr>
+<tr>
+<td><strong>PSPO-WRS (Ours)</strong></td>
+<td><strong>86.76%</strong></td>
+<td><strong>64.91%</strong></td>
+<td><strong>67.60%</strong></td>
+<td><strong>71.57%</strong></td>
+<td><strong>52.29%</strong></td>
+<td><strong>54.70%</strong></td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>We conducted a comparative analysis of PSPO-WRS against mainstream ultra LLMs, as detailed in Figure 5. Across all evaluated datasets, the PSPO-WRS significantly outperformed GPT-3.5, relative to <!-- raw HTML omitted -->GLM4<!-- raw HTML omitted -->, our model showed slightly weaker performance on the NewsNLI dataset but exhibited superior performance on other datasets. Against the more robust reasoning capabilities of <!-- raw HTML omitted -->Qwen2-72B<!-- raw HTML omitted -->, PSPO-WRS also showed its strengths in the AwpNLI dataset and demonstrated comparable performance on additional datasets.</p>
+
+        </div>
+    
+        
+     </article>
+    
+   <nav>
+    <ul class="pager">
+        
+        <li class="previous">
+            <a href="..\../project/project4/index.html">
+                <span aria-hidden="true" class="darknav">&larr;&nbsp;Previous:</span>
+                PSST
+            </a>
+        </li>
+        
+
+        
+        <li class="next">
+            <a href="..\../project/project6/index.html">
+                <span class="darknav">&nbsp;Next:</span>
+                METEOR
+                <span aria-hidden="true" class="darknav">&rarr;</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            © DIRECT Group Bit, 2024 &middot; 
+
+            Partially powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#home" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+</body>
+</html>
+

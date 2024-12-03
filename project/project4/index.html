@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic-group">
+
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="..\..//js/hugo-academic-group.js"></script>
+
+    <link rel="stylesheet" href="..\..//css/bootstrap.min.css">
+    <script src="..\..//js/bootstrap.min.js"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    
+    
+    <script src="..\..//js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+    <link rel="stylesheet" href="..\..//css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\..//css/academicons.min.css">
+    
+    
+    <link rel="stylesheet" href="..\..//css/hugo-academic-group.css">
+
+    
+
+
+    <link rel="shortcut icon" href="..\..//img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="..\../project/project4/">
+
+    <title>PSST: A Benchmark for Evaluation-driven Text Public-Speaking Style Transfer | DIRECT</title>
+
+</head>
+
+<body>
+<div class="home-anchor" id="home"></div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-brand">
+                
+                
+            </div>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../index.html">Home</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../post/index.html">News</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../project/index.html">Project</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../publication/index.html">Research</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../member/index.html">Members</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../index.html#contact">Contact</a></li>
+                    
+                    
+                
+                <li class="nav-item"><a data-scroll href="https://github.com/DirectionAI">GitHub</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    
+
+    <article class="article article-project" itemscope itemtype="http://schema.org/Article">
+        <h1 itemprop="name">PSST: A Benchmark for Evaluation-driven Text Public-Speaking Style Transfer</h1>
+        
+        
+
+        <a class="btn btn-primary btn-outline" href="https://github.com/">Go to Project Site</a>
+
+        <div class="article-style" itemprop="articleBody">
+            <h3 id="psst-a-benchmark-for-evaluation-driven-text-public-speaking-style-transfer">PSST: A Benchmark for Evaluation-driven Text Public-Speaking Style Transfer</h3>
+<blockquote>
+<p>&ldquo;<em>Speech is power: speech is to persuade, to convert, to compel.</em>&rdquo;<br>
+— Ralph Waldo Emerson</p>
+</blockquote>
+<img src="../../img/project/4-1.png">
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#psst-a-benchmark-for-evaluation-driven-text-public-speaking-style-transfer">PSST: A Benchmark for Evaluation-driven Text Public-Speaking Style Transfer</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#introduction">🥳Introduction</a></li>
+<li><a href="#why-text-public-speaking-style-transfer">🫵Why Text Public-Speaking Style Transfer?</a>
+<ul>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#public-speaking-style-transferpsst"><strong>Public-Speaking Style Transfer(PSST)</strong></a></li>
+</ul>
+</li>
+<li><a href="#how-to-evaluate-your-speech-draft">🧐How To Evaluate your &ldquo;Speech Draft&rdquo;?</a>
+<ul>
+<li><a href="#text-style-strength">Text Style Strength</a>
+<ul>
+<li><a href="#1metrics">1.Metrics</a></li>
+<li><a href="#2evaluation-results">2.Evaluation Results</a></li>
+</ul>
+</li>
+<li><a href="#semantic-preservation">Semantic Preservation</a>
+<ul>
+<li><a href="#1qa-based-method">1.QA-Based Method</a></li>
+<li><a href="#2evaluation-results-1">2.Evaluation Results</a></li>
+</ul>
+</li>
+<li><a href="#try-the-speeh-draft-of-your-model">Try the speeh draft of your model</a></li>
+</ul>
+</li>
+<li><a href="#vedio-demo--digital-personas">📹Vedio Demo — digital personas</a></li>
+<li><a href="#citation">🫣Citation</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduction">🥳Introduction</h2>
+<p><strong>Public-Speaking Style Transfer (PSST)</strong>  is an complex, passage-level, scalable, and downstream application-oriented text style transfer task. We started from linguistics and real-world data to analyze the key features of &ldquo;public speaking style&rdquo; and proposed fine-grained evaluation metrics for such complex long-text style transfer tasks. Comprehensive experimental results reveal that current LLMs suffer from <strong>over-stylization</strong>, <strong>uneven style strength distribution</strong>, and <strong>severe semantic degradation</strong> problems. We hope that this task can serve as a stepping stone to explore and enhance the language style modeling capabilities of LLMs, promote AI&rsquo;s understanding and imitation of human language, and facilitate the realization of more personalized applications.</p>
+<h2 id="why-text-public-speaking-style-transfer">🫵Why Text Public-Speaking Style Transfer?</h2>
+<h3 id="motivation">Motivation</h3>
+<ul>
+<li>
+<p><strong>Background</strong></p>
+<ul>
+<li>for research:
+<ul>
+<li>the study of style can enhance AI models&rsquo; ability to comprehend and generate diverse human
+languages by modeling complex human attributes such as personality and mindset.</li>
+</ul>
+</li>
+<li>for applications:
+<ul>
+<li>&ldquo;style&rdquo; advances lots of user-centric applications such as role-playing, digital personas and text generation.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Problems of traditional text style transfer</strong></p>
+<ul>
+<li>Due to the sentence-level, simplistic, and data-driven nature of traditional style transfer tasks, two main problems arise:
+<ol>
+<li>the inability to continuously explore the language style modeling capabilities of LLMs,</li>
+<li>the inability to adapt to complex downstream applications.</li>
+</ol>
+</li>
+<li>Insufficient Evaluation Methods:
+<ul>
+<li>
+<p>Classifier-based style strength evaluation and BertScore(or BLUE)-based semantic evaluation methods cannot provide more detailed evaluation results to help researchers conduct a comprehensive analysis of the language style modeling ability of the model, limiting the advancement of text style transfer technology.</p>
+<h3 id="public-speaking-style-transferpsst"><strong>Public-Speaking Style Transfer(PSST)</strong></h3>
+<img src="../../img/project/4-2.png">
+<!-- raw HTML omitted -->
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Task Definition</strong>: Aims to transform long (0.4k~1.4ktoken), formal texts into a public speaking style, emulating the natural human process of conveying specific knowledge in a public setting.</p>
+<ul>
+<li>Input: formal text (eg. News, Wiki) + Instruction</li>
+<li>Output: public speaking style text (eg. Ted speech draft——vivid, interesting)</li>
+</ul>
+</li>
+<li>
+<p><strong>Style Definition</strong>:</p>
+<ul>
+<li>
+<p>By analyzing real-world data from a linguistic perspective, we decompose public speaking styles into a set of distinct sub-styles:</p>
+<ul>
+<li>
+<p><strong>Interactivity, Emotionality, Vividness, Orality</strong></p>
+<img src="../../img/project/4-3.png">
+<!-- raw HTML omitted -->
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>🤟Evaluation Friendly:
+<ul>
+<li>Decomposed substyles are more readily recognizable by both humans and models.</li>
+</ul>
+</li>
+<li>🧩Task Expansion:
+<ul>
+<li>additional conditions can be introduced to enhance this task such as the speaker’s personality and the audience’s specific preferences.</li>
+<li>conbine with other tasks (role playing) or modals (audio spoken language model)</li>
+</ul>
+</li>
+<li>✌️Easier Data Construction:
+<ul>
+<li>The process of constructing substyle data proves markedly less arduous.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-evaluate-your-speech-draft">🧐How To Evaluate your &ldquo;Speech Draft&rdquo;?</h2>
+<h3 id="text-style-strength">Text Style Strength</h3>
+<h4 id="1metrics">1.Metrics</h4>
+<p>We trained a score model at the (multi-) sentence level for each substyle and propose the following two style strength metrics for long texts:</p>
+<ul>
+<li><strong>Text-Level Style Score</strong>
+<ul>
+<li>Capture the coarse-grained style strength of the long text.</li>
+</ul>
+</li>
+<li><strong>Style Score Distribution</strong>
+<ul>
+<li>Represent the fine-grained style strength of distinct parts within the text.</li>
+</ul>
+</li>
+</ul>
+<h4 id="2evaluation-results">2.Evaluation Results</h4>
+<ul>
+<li>Excessive Style Strength
+<ul>
+<li>the transferred texts (blue and orange) exhibit stronger style strength at
+the text level in each dimension compared to TEDTalks data (green)</li>
+<li>Refer to Figure 32 in our paper for the case study.</li>
+</ul>
+</li>
+<li>Uneven Style Strength Distribution
+<ul>
+<li>
+<p>In real-world scenarios, the style distribution tends to be more uniform, whereas in LLMs, it follows a U-shaped pattern, indicating an overabundance of stylistic elements at the beginning and end of the text. (may realated to <a href="https://aclanthology.org/2024.tacl-1.9/">lost in middle</a>)</p>
+</li>
+<li>
+<p>Refer to Figure 21 in our paper for the case study.</p>
+<img src="../../img/project/4-4.png">
+<!-- raw HTML omitted -->
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong></p>
+<ul>
+<li>Our evaluation models can be found <a href="https://huggingface.co/hot-pot/EvalModels_for_PSST">here</a>.</li>
+<li>More experiments demonstrating the effectiveness of our method can be found in Section 4.1.3 in our paper.</li>
+</ul>
+<h3 id="semantic-preservation">Semantic Preservation</h3>
+<p>For semantic preservation, we propose a QA-based approach, which we believe is better suited to public-speaking real-world scenarios—the style transfer model as a speaker and the QA model as a listener.</p>
+<h4 id="1qa-based-method">1.QA-Based Method</h4>
+<p>Specifically, for the original text, 10 questions (20 total) are generated from two perspectives: key information and logical relations. The QA model is then tested on both the original and stylized texts. Variations in accuracy reflect the degree of semantic preservation.</p>
+<h4 id="2evaluation-results-1">2.Evaluation Results</h4>
+<img src="../../img/project/4-5.jpg">
+<!-- raw HTML omitted -->
+<ul>
+<li>Severe Semantic Degradation
+<ul>
+<li>Compared to the accuracy of QA based on the original or paraphrased text, the accuracy of QA based on the stylized text decreases significantly, highlighting the significant challenges the style transfer model faces in preserving semantics.</li>
+<li>Refer to Figure 24 and 25 in our paper for the case study.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong></p>
+<ul>
+<li>Our evaluation data can be found <a href="https://huggingface.co/datasets/hot-pot/Test_Data_for_PSST">here</a>.</li>
+<li>The QA-Model used in our experiments are <a href="https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct">Llama-3-8B-Instruct</a></li>
+<li>More experiments demonstrating the effectiveness of our method can be found in Section 4.2.2 in our paper.</li>
+</ul>
+<h3 id="try-the-speeh-draft-of-your-model">Try the speeh draft of your model</h3>
+<pre tabindex="0"><code>code TODO
+</code></pre><h2 id="vedio-demo--digital-personas">📹Vedio Demo — digital personas</h2>
+<img src="../../img/project/4-7.png">
+<!-- raw HTML omitted -->
+<p>Screenshots of videos based on LLM-generated public speaking style text. All demos are available at
+this <a href="https://grateful-sesame-4aa.notion.site/Presentation-of-PSST-de0bcc31121442278a158851aa180fdf">URL</a></p>
+<h2 id="citation">🫣Citation</h2>
+<p>If you encounter any questions regarding our work, please do not hesitate to submit an issue or contact us directly via email <a href="mailto:hssun@bit.edu.cn">hssun@bit.edu.cn</a>.</p>
+<p>If you find our benchmark or evaluation pipeline useful or interesting, please cite our paper.</p>
+<pre tabindex="0"><code>@inproceedings{sun-etal-2024-psst,
+    title = &#34;{PSST}: A Benchmark for Evaluation-driven Text Public-Speaking Style Transfer&#34;,
+    author = &#34;Sun, Huashan  and
+      Wu, Yixiao  and
+      Yang, Yizhe  and
+      Li, Yinghao  and
+      Li, Jiawei  and
+      Ye, Yuhao  and
+      Gao, Yang&#34;,
+    editor = &#34;Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung&#34;,
+    booktitle = &#34;Findings of the Association for Computational Linguistics: EMNLP 2024&#34;,
+    month = nov,
+    year = &#34;2024&#34;,
+    address = &#34;Miami, Florida, USA&#34;,
+    publisher = &#34;Association for Computational Linguistics&#34;,
+    url = &#34;https://aclanthology.org/2024.findings-emnlp.495&#34;,
+    pages = &#34;8438--8471&#34;,
+    abstract = &#34;Language style is necessary for AI systems to accurately understand and generate diverse human language. However, previous text style transfer primarily focused on sentence-level data-driven approaches, limiting exploration of potential problems in large language models (LLMs) and the ability to meet complex application needs. To overcome these limitations, we introduce a novel task called Public-Speaking Style Transfer (PSST), which aims to simulate humans to transform passage-level, official texts into a public-speaking style. Grounded in the analysis of real-world data from a linguistic perspective, we decompose public-speaking style into key sub-styles to pose challenges and quantify the style modeling capability of LLMs. For such intricate text style transfer, we further propose a fine-grained evaluation framework to analyze the characteristics and identify the problems of stylized texts. Comprehensive experiments suggest that current LLMs struggle to generate public speaking texts that align with human preferences, primarily due to excessive stylization and loss of semantic information. We will release our data, code, and model upon acceptance.&#34;,
+}
+</code></pre>
+        </div>
+    
+        
+     </article>
+    
+   <nav>
+    <ul class="pager">
+        
+        <li class="previous">
+            <a href="..\../project/project3/index.html">
+                <span aria-hidden="true" class="darknav">&larr;&nbsp;Previous:</span>
+                SRA-MCTS
+            </a>
+        </li>
+        
+
+        
+        <li class="next">
+            <a href="..\../project/project5/index.html">
+                <span class="darknav">&nbsp;Next:</span>
+                PSPO*
+                <span aria-hidden="true" class="darknav">&rarr;</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            © DIRECT Group Bit, 2024 &middot; 
+
+            Partially powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#home" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+</body>
+</html>
+

@@ -1,201 +1,201 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Academic group name</title>
-    <link>https://NlpGroupBit.github.io/publication/</link>
-    <description>Recent content in Publications on Academic group name</description>
+    <title>Publications on DIRECT</title>
+    <link>../../publication/</link>
+    <description>Recent content in Publications on DIRECT</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; Nlp Group Bit, 2024</copyright>
+    <copyright>&amp;copy; DIRECT Group Bit, 2024</copyright>
     <lastBuildDate>Fri, 21 Jun 2024 02:15:49 +0000</lastBuildDate>
-    <atom:link href="https://NlpGroupBit.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="../../publication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Word Matters: What Influences Domain Adaptation in Summarization?</title>
-      <link>https://NlpGroupBit.github.io/publication/paper1/</link>
+      <link>../../publication/paper1/</link>
       <pubDate>Fri, 21 Jun 2024 02:15:49 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper1/</guid>
+      <guid>../../publication/paper1/</guid>
       <description></description>
     </item>
     <item>
       <title>Fundamental Capabilities of Large Language Models and their Applications in Domain Scenarios: A Survey</title>
-      <link>https://NlpGroupBit.github.io/publication/paper3/</link>
+      <link>../../publication/paper3/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper3/</guid>
+      <guid>../../publication/paper3/</guid>
       <description></description>
     </item>
     <item>
       <title>Stage-wise Stylistic Headline Generation: Style Generation and Summarized Content Insertion</title>
-      <link>https://NlpGroupBit.github.io/publication/paper4/</link>
+      <link>../../publication/paper4/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper4/</guid>
+      <guid>../../publication/paper4/</guid>
       <description></description>
     </item>
     <item>
       <title>DRMSpell: Dynamically Reweighting Multimodality for  Chinese Spelling Correction</title>
-      <link>https://NlpGroupBit.github.io/publication/paper8/</link>
+      <link>../../publication/paper8/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper8/</guid>
+      <guid>../../publication/paper8/</guid>
       <description></description>
     </item>
     <item>
       <title>Latent representation discretization for unsupervised text style generation</title>
-      <link>https://NlpGroupBit.github.io/publication/paper17/</link>
+      <link>../../publication/paper17/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper17/</guid>
+      <guid>../../publication/paper17/</guid>
       <description></description>
     </item>
     <item>
       <title>MindLLM: Pre-training Lightweight Large Language Model from Scratch, Evaluations and Domain Applications</title>
-      <link>https://NlpGroupBit.github.io/publication/paper2/</link>
+      <link>../../publication/paper2/</link>
       <pubDate>Fri, 06 Oct 2023 02:15:49 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper2/</guid>
+      <guid>../../publication/paper2/</guid>
       <description></description>
     </item>
     <item>
       <title>Domain adaptation and Summary Distillation for Unsupervised Query Focused Summarization</title>
-      <link>https://NlpGroupBit.github.io/publication/paper6/</link>
+      <link>../../publication/paper6/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper6/</guid>
+      <guid>../../publication/paper6/</guid>
       <description></description>
     </item>
     <item>
       <title>TemplateGEC: Improving Grammatical Error Correction with Detection Template</title>
-      <link>https://NlpGroupBit.github.io/publication/paper7/</link>
+      <link>../../publication/paper7/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper7/</guid>
+      <guid>../../publication/paper7/</guid>
       <description></description>
     </item>
     <item>
       <title>Ask to Understand: Question Generation for Multi-hop Question Answering</title>
-      <link>https://NlpGroupBit.github.io/publication/paper23/</link>
+      <link>../../publication/paper23/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper23/</guid>
+      <guid>../../publication/paper23/</guid>
       <description></description>
     </item>
     <item>
       <title>Unsupervised Style Transfer in News Headlines via Discrete Style Space</title>
-      <link>https://NlpGroupBit.github.io/publication/paper24/</link>
+      <link>../../publication/paper24/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper24/</guid>
+      <guid>../../publication/paper24/</guid>
       <description></description>
     </item>
     <item>
       <title>TopicBERT: A Topic-Enhanced Neural Language Model Fine-Tuned for Sentiment Classification</title>
-      <link>https://NlpGroupBit.github.io/publication/paper16/</link>
+      <link>../../publication/paper16/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper16/</guid>
+      <guid>../../publication/paper16/</guid>
       <description></description>
     </item>
     <item>
       <title>Interpretable modular knowledge reasoning for machine reading comprehension</title>
-      <link>https://NlpGroupBit.github.io/publication/paper14/</link>
+      <link>../../publication/paper14/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper14/</guid>
+      <guid>../../publication/paper14/</guid>
       <description></description>
     </item>
     <item>
       <title>Building Knowledge-Grounded Dialogue Systems with Graph-Based Semantic Modeling</title>
-      <link>https://NlpGroupBit.github.io/publication/paper11/</link>
+      <link>../../publication/paper11/</link>
       <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper11/</guid>
+      <guid>../../publication/paper11/</guid>
       <description></description>
     </item>
     <item>
       <title>PSP: Pre-trained Soft Prompts for Few-Shot Abstractive Summarization</title>
-      <link>https://NlpGroupBit.github.io/publication/paper9/</link>
+      <link>../../publication/paper9/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper9/</guid>
+      <guid>../../publication/paper9/</guid>
       <description></description>
     </item>
     <item>
       <title>TCM-SD: A Benchmark for Probing Syndrome Differentiation via Natural Language Processing</title>
-      <link>https://NlpGroupBit.github.io/publication/paper12/</link>
+      <link>../../publication/paper12/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper12/</guid>
+      <guid>../../publication/paper12/</guid>
       <description></description>
     </item>
     <item>
       <title>To be Closer: Learning to Link up Aspects with Opinions</title>
-      <link>https://NlpGroupBit.github.io/publication/paper27/</link>
+      <link>../../publication/paper27/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper27/</guid>
+      <guid>../../publication/paper27/</guid>
       <description></description>
     </item>
     <item>
       <title>Unifying Cross-lingual Summarization and Machine Translation with Compression Rate</title>
-      <link>https://NlpGroupBit.github.io/publication/paper5/</link>
+      <link>../../publication/paper5/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper5/</guid>
+      <guid>../../publication/paper5/</guid>
       <description></description>
     </item>
     <item>
       <title>SKR-QA: Semantic ranking and knowledge revise for multi-choice question answering</title>
-      <link>https://NlpGroupBit.github.io/publication/paper15/</link>
+      <link>../../publication/paper15/</link>
       <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper15/</guid>
+      <guid>../../publication/paper15/</guid>
       <description></description>
     </item>
     <item>
       <title>Cross-Lingual Abstractive Summarization with Limited Parallel Resources</title>
-      <link>https://NlpGroupBit.github.io/publication/paper10/</link>
+      <link>../../publication/paper10/</link>
       <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper10/</guid>
+      <guid>../../publication/paper10/</guid>
       <description></description>
     </item>
     <item>
       <title>Extracting salient features from convolutional discriminative filter</title>
-      <link>https://NlpGroupBit.github.io/publication/paper26/</link>
+      <link>../../publication/paper26/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper26/</guid>
+      <guid>../../publication/paper26/</guid>
       <description></description>
     </item>
     <item>
       <title>Extracting salient features from convolutional discriminative filters</title>
-      <link>https://NlpGroupBit.github.io/publication/paper20/</link>
+      <link>../../publication/paper20/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper20/</guid>
+      <guid>../../publication/paper20/</guid>
       <description></description>
     </item>
     <item>
       <title>Jointly Learning Topics in Sentence Embedding for Document Summarization</title>
-      <link>https://NlpGroupBit.github.io/publication/paper18/</link>
+      <link>../../publication/paper18/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper18/</guid>
+      <guid>../../publication/paper18/</guid>
       <description></description>
     </item>
     <item>
       <title>Concept Pointer Network for Abstractive Summarization</title>
-      <link>https://NlpGroupBit.github.io/publication/paper13/</link>
+      <link>../../publication/paper13/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper13/</guid>
+      <guid>../../publication/paper13/</guid>
       <description></description>
     </item>
     <item>
       <title>Neural Variational Correlated Topic Modeling</title>
-      <link>https://NlpGroupBit.github.io/publication/paper19/</link>
+      <link>../../publication/paper19/</link>
       <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper19/</guid>
+      <guid>../../publication/paper19/</guid>
       <description></description>
     </item>
     <item>
       <title>Task-oriented Word Embedding for Text Classification</title>
-      <link>https://NlpGroupBit.github.io/publication/paper22/</link>
+      <link>../../publication/paper22/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper22/</guid>
+      <guid>../../publication/paper22/</guid>
       <description></description>
     </item>
     <item>
       <title>Semantic Structure-Based Word Embedding by Incorporating Concept Convergence and Word Divergence</title>
-      <link>https://NlpGroupBit.github.io/publication/paper25/</link>
+      <link>../../publication/paper25/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper25/</guid>
+      <guid>../../publication/paper25/</guid>
       <description></description>
     </item>
     <item>
       <title>Pattern-based Topics for Document Modelling in Information Filtering</title>
-      <link>https://NlpGroupBit.github.io/publication/paper21/</link>
+      <link>../../publication/paper21/</link>
       <pubDate>Fri, 19 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://NlpGroupBit.github.io/publication/paper21/</guid>
+      <guid>../../publication/paper21/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic-group">
+
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="..\..//js/hugo-academic-group.js"></script>
+
+    <link rel="stylesheet" href="..\..//css/bootstrap.min.css">
+    <script src="..\..//js/bootstrap.min.js"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    
+    
+    <script src="..\..//js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+    <link rel="stylesheet" href="..\..//css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\..//css/academicons.min.css">
+    
+    
+    <link rel="stylesheet" href="..\..//css/hugo-academic-group.css">
+
+    
+
+
+    <link rel="shortcut icon" href="..\..//img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="..\../project/project1---%E5%89%AF%E6%9C%AC-2/">
+
+    <title>METEOR: Evolutionary Journey of Large Language Models from Guidance to Self-Growth | DIRECT</title>
+
+</head>
+
+<body>
+<div class="home-anchor" id="home"></div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-brand">
+                
+                
+            </div>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../index.html">Home</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../post/index.html">News</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../project/index.html">Project</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../publication/index.html">Research</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../member/index.html">Members</a></li>
+                    
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="..\../index.html#contact">Contact</a></li>
+                    
+                    
+                
+                <li class="nav-item"><a data-scroll href="https://github.com/">GitHub</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    
+
+    <article class="article article-project" itemscope itemtype="http://schema.org/Article">
+        <h1 itemprop="name">METEOR: Evolutionary Journey of Large Language Models from Guidance to Self-Growth</h1>
+        
+        
+
+        <a class="btn btn-primary btn-outline" href="https://github.com/DirectionAI/METEOR/tree/main">Go to Project Site</a>
+
+        <div class="article-style" itemprop="articleBody">
+            <h3 id="meteor-evolutionary-journey-of-large-language-models-from-guidance-to-self-growth">METEOR: Evolutionary Journey of Large Language Models from Guidance to Self-Growth</h3>
+<h2 id="-introduction">📝 Introduction</h2>
+<p><strong>METEOR: Evolutionary Journey of Large Language Models from Guidance to Self-Growth</strong> a <strong>weak-to-strong evolution framework</strong> that enables LLMs to progressively evolve from supervised guidance to autonomous enhancement. While LLMs have demonstrated remarkable general capabilities across various applications, developing highly versatile LLMs requires substantial computational resources and financial investment, making them impractical for many domain-specific scenarios where specialized expertise is required. Current approaches to domain specialization either rely on costly external enhancements limited to large models, struggle with manual data annotation scalability, or remain bounded by their supervisors&rsquo; performance ceiling. To address these limitations, METEOR introduces a comprehensive <strong>three-stage evolution framework</strong> that guides models from <strong>basic domain knowledge acquisition</strong> through supervised learning to <strong>autonomous capability enhancement</strong> via progressive computational scaling.</p>
+<h2 id="motivation">💡Motivation</h2>
+<p>The primary challenges in developing domain-specific expert models are:</p>
+<ol>
+<li>
+<p>Knowledge Distribution Alignment:
+Traditional knowledge distillation from strong models faces distribution misalignment issues, limiting weak models&rsquo; ability to effectively utilize the distilled knowledge. This necessitates a weak-to-strong strategy where the weak model&rsquo;s distribution guides the knowledge transfer process.</p>
+</li>
+<li>
+<p>Evolution Beyond Initial Capabilities:
+While knowledge distillation provides basic domain capabilities, models often struggle with complex domain-specific problems. This challenge calls for:</p>
+</li>
+</ol>
+<ul>
+<li>Structured feedback through reflection-based learning</li>
+<li>Progressive capability enhancement through scaled computation</li>
+<li>Autonomous improvement beyond supervisor limitations</li>
+</ul>
+<p>Our METEOR framework addresses these challenges through a three-stage approach: initial fine-tuning for basic domain knowledge, iterative training with strong model guidance, and self-training for autonomous improvement.</p>
+<h2 id="methodology">🔍<strong>Methodology</strong></h2>
+<img src="../../img/project/6-2.jpg" alt="overall">
+<!-- raw HTML omitted -->
+<p>The METEOR method consists of three distinct phases: weak-to-strong data distillation, iterative training, and self-evolution strategies. In each phase, the model fully utilizes its existing capabilities to strengthen its domain expertise. Each subsequent phase builds upon the advancements made in the previous one, employing different techniques to further evolve the model.</p>
+<h3 id="weak-to-strong-domain-data-distillation">Weak-to-strong Domain Data Distillation</h3>
+<img src="../../img/project/6-3.jpg" alt="overall">
+
+<!-- raw HTML omitted -->
+<p>Illustration of the weak-to-strong knowledge distillation process. Initially, a domain question is input into the domain model to obtain a guideline. The strong model then uses this guideline, provided by the weak model, along with the original question, to generate and distill domain-specific data.</p>
+<h3 id="data-refinement-and-iterative-training-for-domain-specific-models">Data Refinement and Iterative Training for Domain-Specific Models</h3>
+<img src="../../img/project/6-4.jpg" alt="overall">
+
+<!-- raw HTML omitted -->
+<p>Illustration of he iterative evolution process guided by a strong model. Upon receiving domain-specific data, the model employs CoT reasoning to generate answers and reasoning paths. These are evaluated by GPT-4, which provides confirmation if correct or offers suggestions for refinement if incorrect. This iterative process continues until the answer is validated or the maximum iteration limit is reached.</p>
+<pre tabindex="0"><code>Algorithm: Data Refinement and Iterative Training
+
+Input: Question set Q, Model M, GPT-4, Maximum iterations N, Batch size K
+Output: Updated Model M
+
+training_buffer = {}
+for Q in Q:
+    history = {}
+    while n &lt; N:
+        if n = 0:
+            R_n, A_n = M(Q)                    # Initial attempt
+        else:
+            R_n, A_n = M(Q, guide_n)           # Guided attempt
+        
+        status, explanation, guide = GPT-4(Q, R_n, A_n)
+        history.append(R_n, explanation)
+        
+        if status = &#34;CORRECT&#34;:
+            training_buffer.append(ConvertToTrainingData(Q, history))
+            if len(training_buffer) = K:
+                M = UpdateModel(M, training_buffer)    # Fine-tune model
+                training_buffer = {}                   # Clear buffer
+            break
+        n = n + 1
+
+return M
+</code></pre><h2 id="experimental-setups">🔬<strong>Experimental Setups</strong></h2>
+<h3 id="datasets"><strong>Datasets</strong></h3>
+<p>We use the field of advanced computer education as the specific domain to validate the effectiveness of the proposed Meteor method. To obtain high-quality domain data, we scraped data from Stack Overflow across four categories: Machine Learning (ML), Deep Learning (DL), Natural Language Processing (NLP), and Computer Vision (CV), totaling 10,276 entries.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>ML</th>
+<th>DL</th>
+<th>NLP</th>
+<th>CV</th>
+<th>TOTAL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scale</td>
+<td>4605</td>
+<td>2092</td>
+<td>1881</td>
+<td>1698</td>
+<td>10276</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics"><strong>Metrics</strong></h3>
+<p>We use GPT-4 as a judge to evaluate both data quality and model performance. When comparing the distilled data quality with and without the use of guidelines, GPT-4 is used to score the data, where higher scores indicate better quality. In evaluating the domain-specific answers generated by the model, GPT-4 provides scores based on five criteria: accuracy, completeness, relevance, coherence, and reliability, allowing for a comprehensive assessment of the model&rsquo;s domain capabilities.</p>
+<h2 id="main-results">📈<strong>Main Results</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Completeness</th>
+<th>Relevance</th>
+<th>Coherence</th>
+<th>Reliability</th>
+<th>GPT-4 Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLaMA3 w/o METEOR</td>
+<td>21.3%</td>
+<td>27.8%</td>
+<td>25.6%</td>
+<td>19.9%</td>
+<td>17.8%</td>
+<td>5.02</td>
+</tr>
+<tr>
+<td>LLaMA3 w METEOR</td>
+<td><strong>78.7%</strong></td>
+<td><strong>72.2%</strong></td>
+<td><strong>74.4%</strong></td>
+<td><strong>80.1%</strong></td>
+<td><strong>82.2%</strong></td>
+<td><strong>9.17</strong></td>
+</tr>
+<tr>
+<td>Qwen2 w/o METEOR</td>
+<td>31.6%</td>
+<td>36.5%</td>
+<td>39.7%</td>
+<td>36.5%</td>
+<td>32.9%</td>
+<td>6.88</td>
+</tr>
+<tr>
+<td>Qwen2 w METEOR</td>
+<td><strong>68.4%</strong></td>
+<td><strong>63.5%</strong></td>
+<td><strong>60.3%</strong></td>
+<td><strong>63.5%</strong></td>
+<td><strong>63.5%</strong></td>
+<td><strong>9.28</strong></td>
+</tr>
+</tbody>
+</table>
+<p>We compared the performance changes across various dimensions before and after applying the Meteor method for domain capability evolution of LLMs. For the accuracy, completeness, relevance, coherence, and reliability, we generated responses to test set questions using both the Meteor-trained LLMs and the non-Meteor-trained LLMs. As shown in this table, after the Meteor evolution, LLaMA3-8B-Chat and Qwen2-7B-Instruct achieved improvements. dditionally, the GPT-4 Score after evolution was significantly higher than before, demonstrating the effectiveness of the Meteor method.</p>
+<p>🌟 For more detailed experiments, see <a href="">our paper</a>.</p>
+
+        </div>
+    
+        
+     </article>
+    
+   <nav>
+    <ul class="pager">
+        
+        <li class="previous">
+            <a href="..\../project/project5/index.html">
+                <span aria-hidden="true" class="darknav">&larr;&nbsp;Previous:</span>
+                PSPO: An Effective Process-supervised Policy Optimization for Reasoning Alignment
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            © DIRECT Group Bit, 2024 &middot; 
+
+            Partially powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#home" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+</body>
+</html>
+
